@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2383d765d9.js" crossorigin="anonymous"></script>
+    <title>blufly</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        *{
+            font-family: 'Playfair Display', serif;
+        }
+        #navbar{
+            /* border: 1px solid red; */
+            height:170px;
+            width: 100%;
+            position: fixed;
+            background-color: white;
+        }
+         #logo{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 50%;
+            text-align: center;
+             display: flex;
+        }
+         #side{
+            /* border: 1px solid red; */
+            width: 220px;
+            height: 30px;
+            margin-top: 40px;
+            margin-left: 200px;
+            border-radius: 10px;
+
+         
+        }
+        #side input{
+            height: 28px;
+            border: none;
+            width: 95%;
+            font-size: 18px;
+            border-radius: 10px;
+
+
+        }
+        #user{
+            width: 100px;
+            height: 30px;
+            /* border: 1px solid red; */
+            margin-top: 40px;
+          
+
+        }
+        #user i{
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+        
+        #only{
+            
+             margin-top: 40px;
+            margin-left: 550px; 
+            width: 250px;
+            height: 40px;
+            
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li{
+            float:left;
+            /* width:150px; */
+            /* background-color:black; */
+            margin-left: 30px;
+            font-size: 18px;
+            height: 20px;
+            line-height: 20px;
+            border: 1px solid white;
+            list-style-type:none;
+          
+        }
+         ul li a{
+             text-decoration: none;
+             color: black;
+
+        }  
+         ul li a:hover{
+             cursor: pointer;
+             text-decoration: underline;
+             line-height: 20px;
+        } 
+         #container{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 500px;
+            display: flex;
+            margin-bottom: 40px;
+            cursor: pointer;
+            
+        }
+         #container > div{
+            /* border: 1px solid red; */
+            height:100%;
+            width: 30%;
+            margin:auto;
+        }
+        /* #container > div{
+            margin-top: -50px;
+        } */
+        #container > div img{
+             width: 100%;
+             height: 100%;
+        }
+        #container >div p{
+            margin-top: -240px;
+            color: white;
+            text-align: center;
+            
+
+        }
+        #container >div h1{
+            color: white;
+            text-align: center;
+        }
+        #container >div>h2{
+            color: white;
+            text-align: center;
+        }
+        #container >div >div>a{
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+         #cards{
+            font-size: 15px;
+            /* border: 1px solid red; */
+            height: 50px;
+            width: 250px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+         #box{
+             display: grid;
+             grid-template-columns: repeat(5,2fr);
+             grid-template-rows: repeat(2,200px);
+             gap: 20px;
+              /* border: 1px solid red; */
+              width: 100%;
+              margin-bottom: 50px;
+              
+        }
+        #box > div{
+            /* border: 1px solid red; */
+            height: 100%;
+            text-align: center;
+           
+        }
+        #box > div > img{
+            height: 80%;
+            width: 100%;
+        } 
+        
+       
+         #gucci{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 600px;
+            margin-bottom: 40px;
+            position: relative;
+            cursor: pointer;
+          
+         }
+         #gucci > img{
+            width: 100%;
+            height: 100%;
+           }
+           #gucci > div{
+              position: absolute;
+              top: 20%;
+              left: 50%;
+              bottom: 70%;
+              transform: translate(-50%,-50%);
+              font-size: 20px;
+              color: white;
+              width: 350px;
+              height: 100px;
+              /* text-align: center; */
+              
+            
+           }
+           #gucci>div>p{
+               font-size: 60px;
+                text-align: center;
+                line-height: 50px;
+               
+               
+           }
+           #gucci>div>h4{
+            font-size: 15px;
+            /* text-align: center; */
+            /* line-height: 50px;  */
+           }
+           #gucci>div>div{
+               
+               margin-top: 20px;
+               text-align: center;
+           }
+           #gucci>div>div>a{
+               text-decoration: none;
+               background-color: white;
+               color: black;
+               padding: 10px 10px 10px 10px;
+               letter-spacing: 2px;
+               font-weight: 800;
+           }
+
+         #new{
+            /* border: 1px solid red; */
+            height: 100px;
+            width: 250px;
+            margin: auto;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        #bag{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-bottom: 30px;
+
+           
+        }
+        #bag > div{
+            /* border: 1px solid red; */
+            height: 100%;
+            width: 15%;
+            margin-right: 70px;
+            margin: auto;
+            text-align: center;
+        }
+        #bag > div > img{
+            height: 100%;
+            width: 100%;
+        }
+        #bag > div > p{
+            letter-spacing: 2px;
+        }
+        #trending{
+            /* border: 1px solid red; */
+            height: 50px;
+            width: 250px;
+            margin: auto;
+            margin-bottom: 50px;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+        }
+        #now{
+             display: grid;
+             grid-template-columns: repeat(5,2fr);
+             grid-template-rows: repeat(2,300px);
+             gap: 20px;
+              /* border: 1px solid red; */
+              width: 100%;
+              margin-bottom: 60px;  
+        }
+        #now > div{
+            /* border: 1px solid red; */
+            height: 100%;
+            text-align: center;
+           
+        }
+        #now > div > img{
+            height: 50%;
+            width: 100%;
+           
+        }
+        #laptop{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 500px;
+            display: flex; 
+            margin-bottom: 30px;
+        }
+        #laptop > div{
+            /* border: 1px solid red; */
+            height: 100%;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+        }
+        #laptop > div > img{
+            height: 60%;
+            width: 100%;
+           
+        }
+        #laptop > div > p{
+            font-size: 18px;
+            font-family:Arial, Helvetica, sans-serif;
+            width: auto;
+        }
+        #laptop > div > button{
+            background-color: white;
+            color: black;
+            border: 0px;
+            margin: 10px 5px 5px 10px;
+            cursor: pointer;
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif;
+           
+        }
+        #footer{
+            border: 1px solid white;
+            width: 100%;
+            height: 500px;
+            background-color: #e6e6e6;
+        }
+        #footer > #bottle{
+            /* border: 1px solid red; */
+            width: 70%;
+            height: 50%;
+            display: flex;
+            margin-top: 40px;
+            font-family: futura,sans-serif;
+        }
+        #bottle > div{
+            /* border: 1px solid red; */
+            width: auto;
+            height: 100%;
+            margin: auto;
+        }
+        #bottle > #main{
+            margin-top: 40px;
+        }
+        #footer > #last{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 50%; 
+        }
+        #last{
+            text-align: center;
+            margin-top: 20px;
+           
+        }
+        #last > img{
+            width: 20%;
+            height: 40%;
+        }
+        #last > h6{
+            width: auto;
+            
+        }
+        h4{
+            letter-spacing:3px;
+        }
+        p{
+           line-height: 30px;
+        }
+        #button{
+            background-color:black;
+            color: white;
+            width: 300px;
+            padding: 10px 5px 10px 5px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 10px;
+            border: 0px;
+        }
+        #mail{
+            width: 290px; 
+            height: 40px;
+            font-size: 20px;
+            
+        }
+        .fa-brands{
+            font-size: 30px;
+            justify-content: space-between;
+            margin-top: 20px;
+            
+        }
+        #sign > p{
+            font-size: 20px;
+        }
+        #view{
+            text-decoration: none;
+               background-color: white;
+               color: black;
+               padding: 10px 10px 10px 10px;
+               letter-spacing: 2px;
+               font-weight: 800; 
+               text-align: center;
+        }
+ </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img id="only"src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243">
+            <div id="side">
+                <input id="search" type="text" placeholder="Search our store">
+               
+            </div>
+            <div id="user">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+        <div>
+           <ul id="pen">
+               <li><a href="copy.html">SHOES</a></li>
+               <li><a href="copy1.html">HANDBAG & ACCESSORIES</a></li>
+               <li><a href="copy2.html">DESIGNERS</a></li>
+               <li><a href="copy3.html">MEN</a></li>
+               <li><a href="copy4.html">WOMEN</a></li>
+               <li><a href="copy5.html">SUNGLASSES</a></li>
+               <li><a href="copy6.html">JEWELRY & WATCHES</a></li>
+               <li><a href="copy7.html">UNDER $ 50</a></li>
+               <li><a href="copy8.html">BEAUTY</a></li>
+         </ul>
+
+        </div>
+ </div>
+    <div id="container">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0363/2493/3763/products/760A-R042-R035_1.progressive.jpg?v=1606077379">
+            <p>DRESSES FOR EVERY OCCASION</p>
+            <h1>UPTO 90% OFF</h1>
+            <h2>Featuring BCBGMaxazria, Halston,Kay Unger & More </h2>
+            <div><a href="#">SHOP DRESSES</a></div>
+        </div>
+        
+         
+           
+           
+        
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0280/4993/2357/products/WhatsAppImage2020-10-08at3.30.19PM_710x.jpg?v=1602260860">
+            <p>DESIGNER BOUTIQUE</p>
+            <h1>UPTO 84% OFF</h1>
+            <h2>Beat-Selling Styles from:Gucci,Valentino,Balanciaga,Stuart Weitzman & More </h2>
+            <div><a href="#">SHOP DESIGNER BOUTIQUE</a></div>
+        </div>
+       
+       
+            
+        
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0105/8881/5418/products/Sep21-0437.jpg?v=1632665447">
+            <p>TRENDING TOPS FOR THE NEW SEASON </p>
+            <h1>UPTO 85% OFF</h1>
+            <h2>Featuring Gracia,Theory,Trina,Turk & More </h2>
+            <div><a href="#">SHOP WOMEN'S TOPS</a></div>
+        </div>
+       
+       
+           
+        
+         
+    </div>
+    <hr>
+    <div id="cards">
+         <h2>SHOP BY CATEGORY</h2>
+    </div>
+    <div id="box">
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2227080_large.jpg?v=1649703475">
+        <h4>DRESSES</h4>
+        </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313201861_RLLZ_2_large.jpg?v=1651370370">
+        <h4>PUMPS & HEALS</h4>
+       </div>
+       <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2034456/2017/9/16/11505543457239-DressBerry-Blue-Solid-Shoulder-Bag-9621505543457381-1.jpg">
+        <h4>HANDBAGS</h4>
+       </div>
+       <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/8/6/ef9ff1ea-0014-474a-92ef-ba2d9f0af5e71565090224668-1.jpg">
+        <h4>SUNGLASSES</h4>
+       </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313202046_RLLZ_2_large.jpg?v=1651598056">
+        <h4>WOMEN'S SNEAKERS</h4>
+       </div>
+       <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10331501/2020/3/18/d4d07c60-88d9-43d9-aa78-9cc7712816321584508934272-US-Polo-Assn-Men-White-Colourblocked-Sneakers-84015845089331-1.jpg">
+        <h4>MEN'S SNEAKERS</h4>
+       </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1881083_large.jpg?v=1637943584">
+        <h4>MEN'S TSHIRTS</h4>
+       </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1411376764_RLLZ_2_large.jpg?v=1651558286">
+        <h4>WOMEN'S TOPS</h4>
+       </div>
+       <div>
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/wFdO62OY7I77L6PcMK1d7bBSGEkGTcE4-25_large.jpg?v=1649586643">
+        <h4>WOMEN'S DENIM</h4>
+       </div>
+       <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10118319/2019/8/14/7f593d9e-39f1-444c-8965-3285f8caa6cb1565779921021-DressBerry-Black-Geometric-Drop-Earrings-2171565779920617-1.jpg">
+        <h4>JEWELRY</h4>
+       </div>
+    </div>
+    <hr>
+   
+    <div id="gucci">
+        <img src="https://textildealcdn.sgp1.digitaloceanspaces.com/uploads/Gucci-5pcs-Combo-Wholesale-Woman-Handbags-Shopping.jpg">
+        <div>
+            <p>GUCCI 
+                UPTO 70% OFF</p>
+            <h4>THIS ICONIC BRAND IS REPRESENTED WITH GREAT DESIGN & CONTEMPORARY LIFESTYLE</h4>
+            <div><a href="#">SHOP NOW</a></div>
+        </div>
+    </div>
+    <div id="new">
+        <h2>NEW ARRIVALS</h2>
+        <div><a id="view" href="#">VIEW ALL</a></div>
+    </div>
+        <div id="bag">
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17226504/2022/2/19/ad36636c-654f-472b-9e39-18d197ceeb1c1645274812042DKNYBlackLeatherStructuredSlingBagwithQuilted1.jpg">
+                    <p>
+                        "A" LEATHER HANDBAG 
+                    </p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1566289_1800x1800.png?v=1635615949">
+                    <p>
+                        "DIVAI" T-SHIRT 
+                    </p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2246722_1800x1800.jpg?v=1649684335">
+                    <p>
+                        "LA MEDUSA" RUBBER MULES 
+                    </p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2087946_1800x1800.jpg?v=1638291787">
+                    <p>
+                        "FOR RIDING" RAINBOOTS 
+                    </p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2149730_76cf6aa7-502b-4b5b-bd8e-31e1af9ed2bb_1800x1800.jpg?v=1646588764">
+                    <p>
+                        "KIKI" STRAW CANOTIER HAT
+                    </p>
+                </div>
+            </div>
+           <hr>
+        <div id="trending">
+            <h2>TRENDING NOW</h2>
+        </div>
+        <div id="now">
+            <div>
+               <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/8f593ac8-3f8b-43c7-a514-44cceecabe50_1800x1800.jpg?v=1644499879">
+               <p>BURBERRY YELLOW BURBERRY WINTAGE CHECK HIGH TOP-SNEAKERS from $369.75 </p>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/wtlliMyyv3hcuS7RGVS0VZojPouPYfsw-25_1800x1800.jpg?v=1607399172">
+                <p>ROXY WOMENS DOWN WINTER PUFFER COAT from $248.98</p>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/Monsieur-1-XWY1I-1_1800x1800.jpg?v=1628917488">
+                <p>DIOR PILOT SUNGLASSES MONSIEUR 1 XWY11 GOLD/BLACK/HAVANA 63MM $495.00 </p>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1885891_1800x1800.jpg?v=1637852340">
+                <p>JACQUEMUS BROWN 'LE BAMBINO' LEATHER CROSSBODY PURSE $585.00</p>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1010994296_RLLZ_1_447156e9-6d32-41e7-b8c0-18bf5a4996a7_1800x1800.jpg?v=1651012809">
+                <p>GUCCI DOUBLE G LEATHER BELT $449.99 Save 6%</p>
+                    
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311784215_RLLZ_1_1800x1800.jpg?v=1651602649">
+                <p>STUART WEITZMAN LAINE SUEDE COMBAT BOOT from $279.99</p>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/8d21d1b4-11d7-4354-9fde-fd28589989ea_1800x1800.jpg?v=1628207566">
+                <p>OFF WHITE C/O VIRGIL ABLOH WHITE ARROWS CARRY ON SUITCASE $650.25</p>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/DQ0171-26X-1_1800x1800.jpg?v=1603923722">
+                <p>DSQUARED2 RECTANGULAR SUNGLASSES DQ0171 26X CRYSTAL 52MM 171 $255.00</p>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/CatStyleDior-2-KB72K-1_1800x1800.jpg?v=1609777428">
+                <p>DIOR RECTANGULAR SUNGLASSES CATSTYLEDIOR 2 KB72K GRAY/RUTHENIUM 54MM $490.00</p>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/9f8823b8-195e-4999-9b82-440c7c81bc9d_1800x1800.jpg?v=1627405619">
+                <p>BURBERRY BLACK TB MOTIF POLO SHIRT from $306.00</p>
+            </div>
+
+        </div>
+        <div><a id="view" href="#">VIEW ALL</a></div>
+        
+        <hr>
+        <div id="laptop">
+            <div>
+               <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/Sfnt01nXhq4NlhclU48ML0qCF7LYaXWA-25_large.jpg?v=1651308182">
+               <h2>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h2>
+               <p>From Hudson Jeans, Joe's Jeans, J Brand </p>
+               <button>SHOP DENIM</button>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1411283905_RLLZ_1_1800x1800.jpg?v=1651588193">
+                <h2>UP TO 80% OFF LIGHTWEIGHT JACKETS & COATS</h2>
+                <p>Must-Haves From Cole Haan, Burberry, & More</p>
+                <button>SHOP OUTERWEAR</button>
+            </div>
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17674380/2022/3/29/b584f034-2c8d-4698-a1d2-7113630391381648559038028BelwabaWomenWhiteWallets1.jpg">
+                <h2>UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES</h2>
+                <p>Shop Wallets, Belts, Hats, Sunglasses & More</p>
+                <button>SHOP WOMEN'S ACCESSORIES</button>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="bottle">
+                <div>
+                    <h4>ABOUT US</h4>
+                     <p>Contact Us<br>Frequently Aaked Questions<br>Shipping & Return<br>Pre-Owned Guide</p>
+                </div>
+                <div id="main">
+                     <p>Sell On Blufly<br>Privacy Policy<br>Terms & Conditions</p>
+                </div>
+                <div id="sign">
+                   <h4>SIGN UP AND SAVE</h4>
+                   <P>Subscribe to get exclusive offers on designer brands</P>
+                   <input id="mail" type="text" placeholder="Enter your email">
+                   <br>
+                   <button id="button">Subscribe</button>
+                   <br>
+                   <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <i class="fa-brands fa-facebook-f"></i>
+                </div>
+            </div>
+            <div id="last">
+                
+               <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820">
+               <h5>© 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</h5>
+            </div>
+        </div>
+    
+    
+    
+</body>
+</html>
